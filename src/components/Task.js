@@ -17,14 +17,9 @@ export default function Task({
           disabled={true}
           name="checked"
           id={`archiveTask-${id}`}
-          style={{ textOverflow: "ellipsis" }}
           checked={state === "TASK_ARCHIVED"}
         />
-        <span
-          className="checkbox-custom"
-          onClick={() => onArchiveTask(id)}
-          tabIndex={0}
-        />
+        <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
       </label>
 
       <label htmlFor="title" aria-label={title} className="title">
@@ -34,7 +29,7 @@ export default function Task({
           readOnly={true}
           name="title"
           placeholder="Input title"
-          style={{ textOverflow: "ellipsis" }}
+          /* style={{ color: "#A0AEC0" }} */
         />
       </label>
 
